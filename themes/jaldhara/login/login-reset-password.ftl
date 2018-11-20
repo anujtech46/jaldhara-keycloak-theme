@@ -8,8 +8,7 @@
         <form id="kc-reset-password-form" class="ui form pre-signin" action="${url.loginAction}" method="post">
             <div class="field">
                     <label for="username">${msg("usernameOrEmail")}</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username or email address or phone number and we will send you instructions on how to create a new password." autofocus/>
-                    <input id="channelUsername" name="channelusername" value="${(login.channelusername!'')?html}" type="text" autofocus autocomplete="off" />
+                    <input type="text" id="username" name="username" placeholder="Enter your username or email address and we will send you instructions on how to create a new password." autofocus/>
             </div>
 
             <div class="ui grid margin-top2em">
