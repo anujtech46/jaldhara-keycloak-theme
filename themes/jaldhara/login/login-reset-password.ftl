@@ -32,15 +32,15 @@
 $("#kc-login").click(function () {
 var channelName = 'jaldhara';
 var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-var sEmail = $("#channelUsername").val();
+var sEmail = $("#username").val();
 if (filter.test(sEmail) || sEmail.search('@' + channelName ) > -1 || sEmail === '') {
   $("#username").val(function() {
-        return $("#channelUsername").val();
+        return $("#username").val();
     });
 }
 else {
     $("#username").val(function() {
-        return $("#channelUsername").val() + '@' + channelName;
+        return $("#username").val() + '@' + channelName;
     });
 }   
 });    
