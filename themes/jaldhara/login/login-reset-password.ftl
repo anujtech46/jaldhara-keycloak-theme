@@ -19,7 +19,7 @@
                 </div>
 
                 <div id="kc-form-buttons" class="six wide column">
-                    <button class="ui primary right floated button buttonResizeClass" type="submit">${msg("doSubmit")}</button>
+                    <button id="kc-reset-password" class="ui primary right floated button buttonResizeClass" type="submit">${msg("doSubmit")}</button>
                 </div>
             </div>
         </form>
@@ -29,20 +29,19 @@
 </@layout.registrationLayout>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-$("#kc-login").click(function () {
-var channelName = 'jaldhara';
+$("#kc-reset-password").click(function () {
 var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 var sEmail = $("#username").val();
-if (filter.test(sEmail) || sEmail.search('@' + channelName ) > -1 || sEmail === '') {
+if (filter.test(sEmail) || sEmail.search('@jaldhara') > -1 || sEmail === '') {
   $("#username").val(function() {
         return $("#username").val();
     });
 }
 else {
     $("#username").val(function() {
-        return $("#username").val() + '@' + channelName;
+        return $("#username").val() + '@jaldhara';
     });
 }   
-});    
+});       
 
 </script>
