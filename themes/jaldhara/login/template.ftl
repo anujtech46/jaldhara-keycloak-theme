@@ -10,7 +10,7 @@
         </#list>
     </#if>
     <title><#nested "title"></title>
-    <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
+    <link rel="icon" href="https://jaldhara.blob.core.windows.net/portal-logo/forwater_favicon.ico" />
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
             <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
@@ -73,7 +73,7 @@
                                     <div class="ten wide column signInGridAlign">
                                       <div class="ui fluid card">
                                         <div class="ui centered medium image signInLogo" style="margin-top: 35px;">
-                                            <img src="${url.resourcesPath}/img/jaldhara_anbileru_adaleru.png" />
+                                            <img src="https://jaldhara.blob.core.windows.net/portal-logo/ForWater_reduced.png" />
                                         </div>
                                         <div class="ui basic segment">
                                         <h2 class="ui header">${msg("loginTitleHtml",(realm.displayNameHtml!''))}</h2>
