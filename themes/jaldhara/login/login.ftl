@@ -6,6 +6,10 @@
         ${msg("loginTitleHtml",(realm.displayNameHtml!''))}
     <#elseif section = "form">
         <#if realm.password>
+        
+            <div class="ui basic segment">
+                <h2 class="ui header">${msg("loginTitleHtml",(realm.displayNameHtml!''))}</h2>
+            </div>
             <form id="kc-form-login" class="ui form pre-signin" action="${url.loginAction}" method="post">
                 <div class="field">
                         <label for="username"><#if !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>

@@ -8,7 +8,7 @@
         <form id="kc-reset-password-form" class="ui form pre-signin" action="${url.loginAction}" method="post">
             <div class="field">
                     <label for="username">Email or Phone Number</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your registered email address or Phone Number and we will send you instructions on how to create a new password." autofocus/>
+                    <input type="text" id="username" name="username" placeholder="Enter your registered email address or phone number and we will send you instructions on how to create a new password." autofocus/>
             </div>
 
             <div class="ui grid margin-top2em">

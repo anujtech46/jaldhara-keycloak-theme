@@ -75,9 +75,6 @@
                                         <div class="ui centered medium image signInLogo" style="margin-top: 35px;">
                                             <img src="https://jaldhara.blob.core.windows.net/portal-logo/ForWater_reduced.png" />
                                         </div>
-                                        <div class="ui basic segment">
-                                        <h2 class="ui header">${msg("loginTitleHtml",(realm.displayNameHtml!''))}</h2>
-                                        </div>
                                        <div class="content signin-contentPadding">
                                         <#nested "form">
                                         </div>
